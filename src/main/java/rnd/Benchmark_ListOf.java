@@ -69,16 +69,16 @@ public class Benchmark_ListOf {
   @Benchmark public List<String> varargs_switch_09() { return ImmutableList.of(o,o,o,o,o,o,o,o,o); }
   @Benchmark public List<String> varargs_switch_10() { return ImmutableList.of(o,o,o,o,o,o,o,o,o,o); }
 
-  @Benchmark public List<String> proposed_00() { return List_JEP269.of(); }
-  @Benchmark public List<String> proposed_01() { return List_JEP269.of(o); }
-  @Benchmark public List<String> proposed_02() { return List_JEP269.of(o,o); }
-  @Benchmark public List<String> proposed_03() { return List_JEP269.of(o,o,o); }
-  @Benchmark public List<String> proposed_04() { return List_JEP269.of(o,o,o,o); }
-  @Benchmark public List<String> proposed_05() { return List_JEP269.of(o,o,o,o,o); }
-  @Benchmark public List<String> proposed_06() { return List_JEP269.of(o,o,o,o,o,o); }
-  @Benchmark public List<String> proposed_07() { return List_JEP269.of(o,o,o,o,o,o,o); }
-  @Benchmark public List<String> proposed_08() { return List_JEP269.of(o,o,o,o,o,o,o,o); }
-  @Benchmark public List<String> proposed_09() { return List_JEP269.of(o,o,o,o,o,o,o,o,o); }
-  @Benchmark public List<String> proposed_10() { return List_JEP269.of(o,o,o,o,o,o,o,o,o,o); }
+  @Benchmark public List<String> via_interface_00() { return List_JEP269.of(); }
+  @Benchmark public List<String> via_interface_01() { return List_JEP269.of(o); }
+  @Benchmark public List<String> via_interface_02() { return List_JEP269.of(o,o); }
+  @Benchmark public List<String> via_interface_03() { return List_JEP269.of(o,o,o); }
+  @Benchmark public List<String> via_interface_04() { return List_JEP269.of(o,o,o,o); }
+  @Benchmark public List<String> via_interface_05() { return List_JEP269.of(o,o,o,o,o); }
+  @Benchmark public List<String> via_interface_06() { return List_JEP269.of(o,o,o,o,o,o); }
+  @Benchmark public List<String> via_interface_07() { return List_JEP269.of(o,o,o,o,o,o,o); }
+  @Benchmark public List<String> via_interface_08() { return List_JEP269.of(o,o,o,o,o,o,o,o); }
+  @Benchmark public List<String> via_interface_09() { return List_JEP269.of(o,o,o,o,o,o,o,o,o); }
+  @Benchmark public List<String> via_interface_10() { return List_JEP269.of(o,o,o,o,o,o,o,o,o,o); }
 
 }
