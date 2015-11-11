@@ -10,6 +10,7 @@ import org.openjdk.jmh.annotations.Scope;
 import org.openjdk.jmh.annotations.State;
 import org.openjdk.jmh.annotations.Warmup;
 import org.openjdk.jmh.runner.Runner;
+import org.openjdk.jmh.runner.RunnerException;
 import org.openjdk.jmh.runner.options.Options;
 import org.openjdk.jmh.runner.options.OptionsBuilder;
 
@@ -26,7 +27,7 @@ public class Benchmark_ListOf {
 
   private String o = "";
 
-  public static void main(String[] args) throws Exception {
+  public static void main(String[] args) throws RunnerException {
     Options options = new OptionsBuilder()
         .include(Benchmark_ListOf.class.getName())
         .build();
