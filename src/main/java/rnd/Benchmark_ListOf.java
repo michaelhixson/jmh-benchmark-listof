@@ -25,7 +25,6 @@ import java.util.concurrent.TimeUnit;
 public class Benchmark_ListOf {
 
   private String o = "";
-  private static final String o = "";
 
   public static void main(String[] args) throws Exception {
     Options options = new OptionsBuilder()
