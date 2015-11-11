@@ -39,17 +39,17 @@ public class Benchmark_ListOf {
   @Benchmark public List<String> fixed_args_09() { return ImmutableList.of9(o,o,o,o,o,o,o,o,o); }
   @Benchmark public List<String> fixed_args_10() { return ImmutableList.of10(o,o,o,o,o,o,o,o,o,o); }
 
-  @Benchmark public List<String> varargs_array_00() { return ImmutableList.copyOf(); }
-  @Benchmark public List<String> varargs_array_01() { return ImmutableList.copyOf(o); }
-  @Benchmark public List<String> varargs_array_02() { return ImmutableList.copyOf(o,o); }
-  @Benchmark public List<String> varargs_array_03() { return ImmutableList.copyOf(o,o,o); }
-  @Benchmark public List<String> varargs_array_04() { return ImmutableList.copyOf(o,o,o,o); }
-  @Benchmark public List<String> varargs_array_05() { return ImmutableList.copyOf(o,o,o,o,o); }
-  @Benchmark public List<String> varargs_array_06() { return ImmutableList.copyOf(o,o,o,o,o,o); }
-  @Benchmark public List<String> varargs_array_07() { return ImmutableList.copyOf(o,o,o,o,o,o,o); }
-  @Benchmark public List<String> varargs_array_08() { return ImmutableList.copyOf(o,o,o,o,o,o,o,o); }
-  @Benchmark public List<String> varargs_array_09() { return ImmutableList.copyOf(o,o,o,o,o,o,o,o,o); }
-  @Benchmark public List<String> varargs_array_10() { return ImmutableList.copyOf(o,o,o,o,o,o,o,o,o,o); }
+  @Benchmark public List<String> varargs_clone_00() { return ImmutableList.copyOf(); }
+  @Benchmark public List<String> varargs_clone_01() { return ImmutableList.copyOf(o); }
+  @Benchmark public List<String> varargs_clone_02() { return ImmutableList.copyOf(o,o); }
+  @Benchmark public List<String> varargs_clone_03() { return ImmutableList.copyOf(o,o,o); }
+  @Benchmark public List<String> varargs_clone_04() { return ImmutableList.copyOf(o,o,o,o); }
+  @Benchmark public List<String> varargs_clone_05() { return ImmutableList.copyOf(o,o,o,o,o); }
+  @Benchmark public List<String> varargs_clone_06() { return ImmutableList.copyOf(o,o,o,o,o,o); }
+  @Benchmark public List<String> varargs_clone_07() { return ImmutableList.copyOf(o,o,o,o,o,o,o); }
+  @Benchmark public List<String> varargs_clone_08() { return ImmutableList.copyOf(o,o,o,o,o,o,o,o); }
+  @Benchmark public List<String> varargs_clone_09() { return ImmutableList.copyOf(o,o,o,o,o,o,o,o,o); }
+  @Benchmark public List<String> varargs_clone_10() { return ImmutableList.copyOf(o,o,o,o,o,o,o,o,o,o); }
 
   @Benchmark public List<String> varargs_switch_00() { return ImmutableList.of(); }
   @Benchmark public List<String> varargs_switch_01() { return ImmutableList.of(o); }
