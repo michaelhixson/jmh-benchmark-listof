@@ -19,16 +19,14 @@ final class ImmutableList {
   static <E> List<E> of2(E e1, E e2) {
     return Collections.unmodifiableList(Arrays.asList(
         Objects.requireNonNull(e1),
-        Objects.requireNonNull(e2)
-    ));
+        Objects.requireNonNull(e2)));
   }
 
   static <E> List<E> of3(E e1, E e2, E e3) {
     return Collections.unmodifiableList(Arrays.asList(
         Objects.requireNonNull(e1),
         Objects.requireNonNull(e2),
-        Objects.requireNonNull(e3)
-    ));
+        Objects.requireNonNull(e3)));
   }
 
   static <E> List<E> of4(E e1, E e2, E e3, E e4) {
@@ -36,8 +34,7 @@ final class ImmutableList {
         Objects.requireNonNull(e1),
         Objects.requireNonNull(e2),
         Objects.requireNonNull(e3),
-        Objects.requireNonNull(e4)
-    ));
+        Objects.requireNonNull(e4)));
   }
 
   static <E> List<E> of5(E e1, E e2, E e3, E e4, E e5) {
@@ -46,8 +43,7 @@ final class ImmutableList {
         Objects.requireNonNull(e2),
         Objects.requireNonNull(e3),
         Objects.requireNonNull(e4),
-        Objects.requireNonNull(e5)
-    ));
+        Objects.requireNonNull(e5)));
   }
 
   static <E> List<E> of6(E e1, E e2, E e3, E e4, E e5, E e6) {
@@ -57,8 +53,7 @@ final class ImmutableList {
         Objects.requireNonNull(e3),
         Objects.requireNonNull(e4),
         Objects.requireNonNull(e5),
-        Objects.requireNonNull(e6)
-    ));
+        Objects.requireNonNull(e6)));
   }
 
   static <E> List<E> of7(E e1, E e2, E e3, E e4, E e5, E e6, E e7) {
@@ -69,8 +64,7 @@ final class ImmutableList {
         Objects.requireNonNull(e4),
         Objects.requireNonNull(e5),
         Objects.requireNonNull(e6),
-        Objects.requireNonNull(e7)
-    ));
+        Objects.requireNonNull(e7)));
   }
 
   static <E> List<E> of8(E e1, E e2, E e3, E e4, E e5, E e6, E e7, E e8) {
@@ -82,8 +76,7 @@ final class ImmutableList {
         Objects.requireNonNull(e5),
         Objects.requireNonNull(e6),
         Objects.requireNonNull(e7),
-        Objects.requireNonNull(e8)
-    ));
+        Objects.requireNonNull(e8)));
   }
 
   static <E> List<E> of9(E e1, E e2, E e3, E e4, E e5, E e6, E e7, E e8, E e9) {
@@ -96,8 +89,7 @@ final class ImmutableList {
         Objects.requireNonNull(e6),
         Objects.requireNonNull(e7),
         Objects.requireNonNull(e8),
-        Objects.requireNonNull(e9)
-    ));
+        Objects.requireNonNull(e9)));
   }
 
   static <E> List<E> of10(E e1, E e2, E e3, E e4, E e5, E e6, E e7, E e8, E e9, E e10) {
@@ -111,8 +103,7 @@ final class ImmutableList {
         Objects.requireNonNull(e7),
         Objects.requireNonNull(e8),
         Objects.requireNonNull(e9),
-        Objects.requireNonNull(e10)
-    ));
+        Objects.requireNonNull(e10)));
   }
 
   @SafeVarargs
