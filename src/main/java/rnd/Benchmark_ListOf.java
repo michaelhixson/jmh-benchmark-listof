@@ -24,6 +24,7 @@ import java.util.concurrent.TimeUnit;
 @Fork(2)
 public class Benchmark_ListOf {
 
+  private String o = "";
   private static final String o = "";
 
   public static void main(String[] args) throws Exception {
