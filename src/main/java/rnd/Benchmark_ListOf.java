@@ -27,13 +27,6 @@ public class Benchmark_ListOf {
 
   private String o = "";
 
-  public static void main(String[] args) throws RunnerException {
-    Options options = new OptionsBuilder()
-        .include(Benchmark_ListOf.class.getName())
-        .build();
-    new Runner(options).run();
-  }
-
   @Benchmark public List<String> explicit_00() { return ImmutableList.of0(); }
   @Benchmark public List<String> explicit_01() { return ImmutableList.of1(o); }
   @Benchmark public List<String> explicit_02() { return ImmutableList.of2(o,o); }
@@ -81,5 +74,12 @@ public class Benchmark_ListOf {
   @Benchmark public List<String> via_interface_08() { return List_JEP269.of(o,o,o,o,o,o,o,o); }
   @Benchmark public List<String> via_interface_09() { return List_JEP269.of(o,o,o,o,o,o,o,o,o); }
   @Benchmark public List<String> via_interface_10() { return List_JEP269.of(o,o,o,o,o,o,o,o,o,o); }
+
+  public static void main(String[] args) throws RunnerException {
+    Options options = new OptionsBuilder()
+        .include(Benchmark_ListOf.class.getName())
+        .build();
+    new Runner(options).run();
+  }
 
 }
