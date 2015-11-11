@@ -8,6 +8,24 @@ import java.util.Objects;
 final class ImmutableList {
   private ImmutableList() {}
 
+  @SafeVarargs
+  static <E> List<E> of(E... es) {
+    switch (es.length) {
+      case 0: return of0();
+      case 1: return of1(es[0]);
+      case 2: return of2(es[0], es[1]);
+      case 3: return of3(es[0], es[1], es[2]);
+      case 4: return of4(es[0], es[1], es[2], es[3]);
+      case 5: return of5(es[0], es[1], es[2], es[3], es[4]);
+      case 6: return of6(es[0], es[1], es[2], es[3], es[4], es[5]);
+      case 7: return of7(es[0], es[1], es[2], es[3], es[4], es[5], es[6]);
+      case 8: return of8(es[0], es[1], es[2], es[3], es[4], es[5], es[6], es[7]);
+      case 9: return of9(es[0], es[1], es[2], es[3], es[4], es[5], es[6], es[7], es[8]);
+      case 10: return of10(es[0], es[1], es[2], es[3], es[4], es[5], es[6], es[7], es[8], es[9]);
+      default: return copyOf(es);
+    }
+  }
+
   static <E> List<E> of0() {
     return Collections.emptyList();
   }
@@ -111,23 +129,5 @@ final class ImmutableList {
     E[] copy = es.clone();
     for (E e : copy) Objects.requireNonNull(e);
     return Collections.unmodifiableList(Arrays.asList(copy));
-  }
-
-  @SafeVarargs
-  static <E> List<E> of(E... es) {
-    switch (es.length) {
-      case 0: return of0();
-      case 1: return of1(es[0]);
-      case 2: return of2(es[0], es[1]);
-      case 3: return of3(es[0], es[1], es[2]);
-      case 4: return of4(es[0], es[1], es[2], es[3]);
-      case 5: return of5(es[0], es[1], es[2], es[3], es[4]);
-      case 6: return of6(es[0], es[1], es[2], es[3], es[4], es[5]);
-      case 7: return of7(es[0], es[1], es[2], es[3], es[4], es[5], es[6]);
-      case 8: return of8(es[0], es[1], es[2], es[3], es[4], es[5], es[6], es[7]);
-      case 9: return of9(es[0], es[1], es[2], es[3], es[4], es[5], es[6], es[7], es[8]);
-      case 10: return of10(es[0], es[1], es[2], es[3], es[4], es[5], es[6], es[7], es[8], es[9]);
-      default: return copyOf(es);
-    }
   }
 }
